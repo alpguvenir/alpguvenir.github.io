@@ -1,0 +1,42 @@
+body {
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #212121;
+  color: #fff;
+  padding: 20px 0;
+}
+
+section {
+  padding: 40px 0;
+}
+
+footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.white-label {
+    color: white;
+}
+
+.custom-navbar-brand:hover,
+.custom-navbar-brand:focus {
+    color: inherit; /* Keeps the original text color on hover and focus */
+    text-decoration: none; /* Removes the underline on hover and focus */
+}
+
+.profile-image {
+  width: 50%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+}
