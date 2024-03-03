@@ -50,22 +50,19 @@ footer {
   align-items: center;
 }
 
-.card-image {
+.card-image-container {
   /*
   aspect-ratio: 1; 
   display: flex; 
   align-items: center;
   */
   transition: all 0.5s ease;
+  position: relative;
+  display: inline-block;
 }
 
 .card-image:hover {
   filter: brightness(40%);
-}
-
-.image-container {
-  position: relative;
-  display: inline-block;
 }
 
 .base-image {
@@ -84,10 +81,10 @@ footer {
   transition: all 0.5s ease;
 }
 
-.image-container:hover .overlay-image {
+.card-image-container:hover .overlay-image {
   opacity: 1;
 }
 
-.image-container:hover .base-image {
+.card-image-container:hover .base-image {
   filter: brightness(40%);
 }
