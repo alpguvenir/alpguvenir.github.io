@@ -23,10 +23,23 @@ footer {
     color: white;
 }
 
-.custom-navbar-brand:hover,
-.custom-navbar-brand:focus {
-    color: inherit; /* Keeps the original text color on hover and focus */
-    text-decoration: none; /* Removes the underline on hover and focus */
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: inherit; /* Keeps the original text color on hover and focus */
+  text-decoration: none; /* Removes the underline on hover and focus */
+}
+
+.navbar-toggler {
+  background-color: white;
+  border: none;
+}
+
+.nav-link {
+  color: white;
 }
 
 .profile-image {
