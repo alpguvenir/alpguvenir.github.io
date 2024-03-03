@@ -38,10 +38,6 @@ footer {
   border: none;
 }
 
-.nav-link {
-  color: white;
-}
-
 .profile-image {
   width: 50%;
   border-radius: 50%;
@@ -52,4 +48,46 @@ footer {
 .contact-list {
   display: flex;
   align-items: center;
+}
+
+.card-image {
+  /*
+  aspect-ratio: 1; 
+  display: flex; 
+  align-items: center;
+  */
+  transition: all 0.5s ease;
+}
+
+.card-image:hover {
+  filter: brightness(40%);
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.base-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially, hide the overlay image */
+  transition: all 0.5s ease;
+}
+
+.image-container:hover .overlay-image {
+  opacity: 1;
+}
+
+.image-container:hover .base-image {
+  filter: brightness(40%);
 }
