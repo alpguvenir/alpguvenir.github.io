@@ -12,13 +12,6 @@ section {
   padding: 40px 0;
 }
 
-footer {
-  background-color: #212121;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
 .white-label {
     color: white;
 }
@@ -45,9 +38,8 @@ footer {
   margin: auto;
 }
 
-.contact-list {
-  display: flex;
-  align-items: center;
+.col-md-3 {
+  margin-bottom: 20px;
 }
 
 .card-image-container {
@@ -87,4 +79,17 @@ footer {
 
 .card-image-container:hover .base-image {
   filter: brightness(40%);
+}
+
+
+.contact-list {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
