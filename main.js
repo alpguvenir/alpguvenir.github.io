@@ -28,3 +28,34 @@ function performDownload() {
         });
 
 }
+
+/*
+  function asyncFunc2() {
+    console.log("in Async function 2");
+  }
+  async function asyncFunc1() {
+    console.log("in Async function 1");
+    await asyncFunc2();
+    console.log('After an await');
+  }
+  console.log("starting sync code");
+  asyncFunc1().then(() => {
+    console.log("Received answer from async code");
+  });
+  console.log("finishing sync code");
+
+
+  async function asyncFunc2() {
+    console.log("in Async function 2");
+  }
+  async function asyncFunc1() {
+    console.log("in Async function 1");
+    await asyncFunc2();
+    console.log('After an await');
+  }
+  console.log("starting sync code");
+  await asyncFunc1().then(() => {
+    console.log("Received answer from async code");
+  });
+  console.log("finishing sync code");
+  */
