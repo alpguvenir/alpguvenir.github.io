@@ -29,6 +29,24 @@ function performDownload() {
 
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    var navbarLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    console.log(navbarLinks)
+    navbarLinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+            // Get the collapsible element
+            var collapseElement = document.querySelector(".navbar-collapse");
+            // Check if it's already collapsed
+            var isOpen = collapseElement.classList.contains("show");
+            // If it's not collapsed, collapse it
+            if (isOpen) {
+                var navbarToggler = document.querySelector(".navbar-toggler");
+                navbarToggler.click(); // Simulate click on the toggler button
+            }
+        });
+    });
+});
+
 /*
   function asyncFunc2() {
     console.log("in Async function 2");
