@@ -43,18 +43,9 @@ section {
 }
 
 .card-image-container {
-  /*
-  aspect-ratio: 1; 
-  display: flex; 
-  align-items: center;
-  */
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   position: relative;
   display: inline-block;
-}
-
-.card-image:hover {
-  filter: brightness(40%);
 }
 
 .base-image {
@@ -87,9 +78,54 @@ section {
   align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .contact-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+}
+
+.contact-list-label {
+  display: flex; /* Use flexbox to make items align horizontally */
+  flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+  align-items: center;
+  margin-right: 5px;
+}
+
+
+
 footer {
   background-color: #212121;
   color: #fff;
   padding: 20px 0;
   text-align: center;
+}
+
+
+
+
+
+.expandable {
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: max-height 0.3s ease; /* Transition only max-height */
+  overflow: hidden;
+  max-height: 0;
+}
+
+.expandable.expanded {
+  max-height: 500px; /* Set a value greater than the expected content height */
+}
+
+.static-area {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.expand-button {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
 }
