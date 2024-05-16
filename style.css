@@ -12,16 +12,11 @@ section {
   padding: 40px 0;
 }
 
-.white-label {
-    color: white;
-}
-
 .navbar-brand {
   color: white;
 }
 
-.navbar-brand:hover,
-.navbar-brand:focus {
+.navbar-brand:hover {
   color: inherit; /* Keeps the original text color on hover and focus */
   text-decoration: none; /* Removes the underline on hover and focus */
 }
@@ -31,8 +26,17 @@ section {
   border: none;
 }
 
+.nav-link:hover {
+  color: inherit; /* Keeps the original text color on hover and focus */
+  text-decoration: none; /* Removes the underline on hover and focus */
+}
+
+.white-label {
+  color: #b0b0b0;
+}
+
 .profile-image {
-  width: 50%;
+  width: 80%;
   border-radius: 50%;
   display: block;
   margin: auto;
@@ -73,13 +77,14 @@ section {
 }
 
 
-.contact-list {
+
+.item-list {
   display: flex;
   align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
-  .contact-list {
+  .item-list {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -87,12 +92,13 @@ section {
   }
 }
 
-.contact-list-label {
+.item-list-label {
   display: flex; /* Use flexbox to make items align horizontally */
   flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
   align-items: center;
   margin-right: 5px;
 }
+
 
 
 
